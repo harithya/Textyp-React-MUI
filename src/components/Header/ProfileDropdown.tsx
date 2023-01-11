@@ -48,6 +48,18 @@ const ProfileDropdown = () => {
                 MenuListProps={{
                     'aria-labelledby': 'profile-button',
                 }}
+                sx={{
+                    '& .MuiPaper-root': {
+                        position: "relative"
+                    },
+                    '&:before': {
+                        content: "''",
+                        position: "absolute",
+                        height: 50,
+                        width: 50,
+                        backgroundColor: "red"
+                    }
+                }}
             >
                 <StyledMenuItem onClick={handleClose}>
                     <ListItemIcon>

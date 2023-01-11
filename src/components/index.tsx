@@ -4,6 +4,7 @@ import Header from "./Header";
 import Icon from "./Icon";
 import Button from "./Button";
 import Section from "./Section";
+import SearchBar from "./SearchBar";
 
 export {
     Layout,
@@ -11,5 +12,6 @@ export {
     Header,
     Icon,
     Button,
-    Section
+    Section,
+    SearchBar
 }
