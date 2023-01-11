@@ -21,7 +21,8 @@ const StyledSearchBar = styled(Box)(({ theme }) => ({
     paddingLeft: 20,
     paddingRight: 20,
     borderRadius: 10,
-    border: `1px solid ${theme.palette.grey[200]}`
+    border: `1px solid ${theme.palette.grey[200]}`,
+    marginBottom: 28
 }))
 
 export default SearchBar

@@ -3,6 +3,7 @@ import { makeStyles } from '@mui/styles';
 const useStyles = makeStyles({
     flex: {
         display: "flex",
+        width: "100%"
     },
     justifyBetween: {
         flex: 1,

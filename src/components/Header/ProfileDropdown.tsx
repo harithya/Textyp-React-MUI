@@ -50,15 +50,15 @@ const ProfileDropdown = () => {
                 }}
                 sx={{
                     '& .MuiPaper-root': {
-                        position: "relative"
+                        // position: "relative"
                     },
-                    '&:before': {
-                        content: "''",
-                        position: "absolute",
-                        height: 50,
-                        width: 50,
-                        backgroundColor: "red"
-                    }
+                    // '&:before': {
+                    //     content: "''",
+                    //     position: "absolute",
+                    //     height: 50,
+                    //     width: 50,
+                    //     backgroundColor: "red"
+                    // }
                 }}
             >
                 <StyledMenuItem onClick={handleClose}>
