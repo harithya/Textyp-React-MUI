@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 import {
     Drawer,
     colors,
@@ -8,12 +8,14 @@ import {
     List,
     ListSubheader,
     useTheme,
-    useMediaQuery
+    useMediaQuery,
+    DrawerProps
 } from '@mui/material'
 import SidebarItem from './SidebarItem';
 
 export const DRAWER_WIDTH = 290;
-const Sidebar = () => {
+
+const Sidebar: FC<DrawerProps> = (props) => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("md"))
 
@@ -31,11 +33,11 @@ const Sidebar = () => {
             }}
             variant={isMobile ? "temporary" : "permanent"}
             anchor="left"
-        >
+            {...props}>
             <StyledToolbar>
                 <img src='/logo.png' height={28} />
             </StyledToolbar>
-            <Container sx={{ mt: 5 }}>
+            <Container sx={{ mt: 1 }}>
                 <List
                     component="nav"
                     aria-labelledby="nested-list-subheader">
@@ -49,12 +51,12 @@ const Sidebar = () => {
                     <SidebarItem icon="SsidChartRounded">SEO Tools</SidebarItem>
                     <SidebarItem icon="BookmarksRounded">Saved Copies</SidebarItem>
                     <SidebarItem icon="WatchLaterRounded">Recent Activity</SidebarItem>
-                    {/* <ListSubheader component="div" sx={{ marginTop: 2 }} id="nested-list-subheader-2">
+                    <ListSubheader component="div" sx={{ marginTop: 2 }} id="nested-list-subheader-2">
                         Account
                     </ListSubheader>
                     <SidebarItem icon="PublicRounded">Change Language</SidebarItem>
                     <SidebarItem icon="StarRounded">Share Feedback</SidebarItem>
-                    <SidebarItem icon="LogoutRounded">Log Out</SidebarItem> */}
+                    <SidebarItem icon="LogoutRounded">Log Out</SidebarItem>
                 </List>
             </Container>
         </Drawer>

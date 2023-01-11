@@ -1,18 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Outlet } from 'react-router-dom'
-import { Box } from '@mui/material'
+import { Box, Container } from '@mui/material'
 import { useStyles } from '../../hooks'
-import Sidebar from '../Sidebar'
+import Sidebar, { StyledToolbar } from '../Sidebar'
 import Header from '../Header'
 
 const Layout = () => {
     const classes = useStyles();
+    const [open, setOpen] = useState(false)
+
+    const handleMenuOpen = () => setOpen(!open)
+
     return (
         <Box className={classes.flex}>
-            <Sidebar />
+            <Sidebar open={open} onClose={handleMenuOpen} />
             <Box component={'main'} sx={{ flexGrow: 1 }} >
-                <Header />
-                <Outlet />
+                <Header onClickMenu={handleMenuOpen} />
+                <StyledToolbar />
+                <Container sx={{ marginTop: 5 }}>
+                    <Outlet />
+                </Container>
             </Box>
         </Box>
     )

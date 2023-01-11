@@ -9,6 +9,10 @@ const useStyles = makeStyles({
         display: 'flex',
         justifyContent: "space-between",
         alignItems: "center"
+    },
+    title: {
+        fontSize: 30,
+        fontWeight: 'semibold'
     }
 })
 

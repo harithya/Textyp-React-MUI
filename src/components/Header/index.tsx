@@ -1,10 +1,15 @@
-import React from 'react'
-import { AppBar, Avatar, colors, Stack, styled } from '@mui/material'
+import React, { FC } from 'react'
+import { AppBar, colors, Stack, styled, IconButton } from '@mui/material'
 import { DRAWER_WIDTH, StyledToolbar } from '../Sidebar'
 import Button from '../Button'
 import Icon from '../Icon'
+import ProfileDropdown from './ProfileDropdown'
 
-const Header = () => {
+interface Props {
+    onClickMenu?: () => void,
+}
+const Header: FC<Props> = ({ onClickMenu }) => {
+
     return (
         <StyledAppBar
             elevation={0}
@@ -15,32 +20,28 @@ const Header = () => {
             }}>
             <Toolbar>
                 <Stack direction={"row"} spacing={2}>
-                    <Button
+                    <IconButton sx={{ display: { xs: 'flex', md: 'none' } }} onClick={onClickMenu}>
+                        <Icon name="MenuRounded" />
+                    </IconButton>
+                    <ActionButton
                         color='secondary'
                         sx={{ color: colors.grey[400] }}
                         startIcon={<Icon name='FileCopyRounded' htmlColor={colors.grey[400]} />}>
                         Create Copy
-                    </Button>
-                    <Button
+                    </ActionButton>
+                    <ActionButton
                         color='secondary'
                         sx={{ color: colors.grey[400] }}
                         startIcon={<Icon name='BookmarksRounded' htmlColor={colors.grey[400]} />}>
                         Saved Copies
-                    </Button>
+                    </ActionButton>
                 </Stack>
                 <Stack
                     direction={"row"}
                     spacing={2}
                     alignItems="center">
                     <Button startIcon={<Icon name="CheckCircleRounded" />}>Go Pro</Button>
-                    <Button
-                        variant='text'
-                        endIcon={<Icon name='ExpandMoreRounded' htmlColor='grey' />}>
-                        <Avatar
-                            src="https://mui.com/static/images/avatar/3.jpg"
-                            alt="User Profile"
-                        />
-                    </Button>
+                    <ProfileDropdown />
                 </Stack>
             </Toolbar>
         </StyledAppBar>
@@ -53,11 +54,19 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
     alignItems: "flex-start",
     borderBottom: `1px solid ${theme.palette.grey[200]}`
 }))
-
+// create
 const Toolbar = styled(StyledToolbar)({
     display: "flex",
     width: "100%",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    alignItems: "center"
 })
+
+const ActionButton = styled(Button)(({ theme }) => ({
+    [theme.breakpoints.down("md")]: {
+        display: "none"
+    }
+}))
+
 
 export default Header

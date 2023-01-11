@@ -1,8 +1,11 @@
 import React from 'react'
+import { Section } from '../../components'
 
 const HomeView = () => {
     return (
-        <div>HomeView</div>
+        <Section>
+            {/* lorem */}
+        </Section>
     )
 }
 
