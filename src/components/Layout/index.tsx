@@ -12,7 +12,7 @@ const Layout = () => {
     const handleMenuOpen = () => setOpen(!open)
 
     return (
-        <Box className={classes.flex}>
+        <Box className={classes.flex} mb={10}>
             <Sidebar open={open} onClose={handleMenuOpen} />
             <Box component={'main'} sx={{ flexGrow: 1 }} >
                 <Header onClickMenu={handleMenuOpen} />

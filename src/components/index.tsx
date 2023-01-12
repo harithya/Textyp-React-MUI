@@ -5,6 +5,7 @@ import Icon from "./Icon";
 import Button from "./Button";
 import Section from "./Section";
 import SearchBar from "./SearchBar";
+import Service from "./Content/Service";
 
 export {
     Layout,
@@ -13,5 +14,6 @@ export {
     Icon,
     Button,
     Section,
-    SearchBar
+    SearchBar,
+    Service
 }

@@ -1,12 +1,15 @@
-import { Box, Chip, ChipProps, alpha, Stack, styled } from '@mui/material'
-import React from 'react'
-import { SearchBar, Section } from '../../components'
+import { Box, Chip, ChipProps, alpha, Stack, styled, Grid } from '@mui/material'
+import React, { useState } from 'react'
+import { SearchBar, Section, Service } from '../../components'
 import filterDummy from '../../assets/dummy/filter-dummy'
+import content from '../../assets/dummy/content-dummy'
 
 const HomeView = () => {
+    const [selectedFilter, setSelectedFilter] = useState('All')
+
     return (
         <Section title="Hay, Thomas 👋" subtitle="What would you like to create to day?">
-            <Box width={{ md: "auto", xs: "100%", lg: "50%" }}>
+            <Box width={{ md: "auto", xs: "100%", lg: "50%" }} mb={5}>
                 <SearchBar />
                 <HorizontalScroll>
                     <Stack direction="row" spacing={1} sx={{ overflowX: "auto" }}>
@@ -14,11 +17,16 @@ const HomeView = () => {
                             <StyledChip
                                 label={item}
                                 key={`filter-${index}`}
-                                onClick={() => console.log(item)}
-                                active={index === 0 ? 'true' : 'false'}
+                                onClick={() => setSelectedFilter(item)}
+                                active={selectedFilter === item ? 'true' : 'false'}
                             />)}
                     </Stack>
                 </HorizontalScroll>
+            </Box>
+            <Box>
+                <Grid container spacing={3}>
+                    {content.map((item, index) => <Service {...item} key={`service-${index}`} />)}
+                </Grid>
             </Box>
         </Section>
     )
