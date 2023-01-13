@@ -45,6 +45,7 @@ const StyledChip = styled(Chip)<StyledChipProps>(({ theme, active }) => ({
     border: `1px solid ${theme.palette.grey[200]}`,
     '& .MuiChip-label': {
         fontWeight: 600,
+        fontSize: 14,
         color: active == 'true' && theme.palette.primary.main,
     },
     '&:hover': {

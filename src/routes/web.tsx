@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "../components";
-import { HomeView } from "../pages";
+import { EditorView, HomeView } from "../pages";
 
 const router = createBrowserRouter([
     {
@@ -10,6 +10,10 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <HomeView />
+            },
+            {
+                path: '/long-from-editor',
+                element: <EditorView />
             }
         ]
     }
