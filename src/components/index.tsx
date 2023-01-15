@@ -6,6 +6,8 @@ import Button from "./Button";
 import Section from "./Section";
 import SearchBar from "./SearchBar";
 import Service from "./Content/Service";
+import Card from "./Card";
+import FormGroup from "./FormGroup";
 
 export {
     Layout,
@@ -15,5 +17,7 @@ export {
     Button,
     Section,
     SearchBar,
-    Service
+    Service,
+    Card,
+    FormGroup
 }

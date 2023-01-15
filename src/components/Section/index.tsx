@@ -9,7 +9,7 @@ interface Props {
 const Section: FC<PropsWithChildren<Props>> = ({ children, title, subtitle }) => {
     return (
         <Box>
-            <Stack mb={5}>
+            <Stack mb={2}>
                 <Typography
                     component={"h4"}
                     fontSize={30}
@@ -17,7 +17,7 @@ const Section: FC<PropsWithChildren<Props>> = ({ children, title, subtitle }) =>
                     fontWeight={600}>
                     {title}
                 </Typography>
-                {subtitle && <Typography fontSize={18} color={colors.grey[500]} >What would you like to create to day?</Typography>}
+                {subtitle && <Typography fontSize={18} mb={3} color={colors.grey[500]} >{subtitle}</Typography>}
             </Stack>
             {children}
         </Box>
