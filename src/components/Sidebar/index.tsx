@@ -47,7 +47,7 @@ const Sidebar: FC<DrawerProps> = (props) => {
                     <SidebarItem icon="GridViewRounded" to="/" >Dashboard</SidebarItem>
                     <SidebarItem icon="DriveFileRenameOutlineRounded" to="/long-from-editor">Long-From Editor</SidebarItem>
                     <SidebarItem icon="EmailRounded" to="/email-tools">Email Tools</SidebarItem>
-                    <SidebarItem icon="AccountTreeRounded" to="#">Social Media Tools</SidebarItem>
+                    <SidebarItem icon="AccountTreeRounded" to="/sosial-media-tools">Social Media Tools</SidebarItem>
                     <SidebarItem icon="SsidChartRounded" to="#">SEO Tools</SidebarItem>
                     <SidebarItem icon="BookmarksRounded" to="#">Saved Copies</SidebarItem>
                     <SidebarItem icon="WatchLaterRounded" to="#">Recent Activity</SidebarItem>

@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "../components";
-import { EditorView, EmailToolsView, HomeView } from "../pages";
+import { EditorView, EmailToolsView, HomeView, SosialMediaToolsView } from "../pages";
 
 const router = createBrowserRouter([
     {
@@ -18,6 +18,10 @@ const router = createBrowserRouter([
             {
                 path: '/email-tools',
                 element: <EmailToolsView />
+            },
+            {
+                path: '/sosial-media-tools',
+                element: <SosialMediaToolsView />
             }
         ]
     }
