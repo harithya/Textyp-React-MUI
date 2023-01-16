@@ -8,6 +8,8 @@ import SearchBar from "./SearchBar";
 import Service from "./Content/Service";
 import Card from "./Card";
 import FormGroup from "./FormGroup";
+import SectionTools from "./Section/SectionTools";
+import Upgrade from "./Upgrade";
 
 export {
     Layout,
@@ -19,5 +21,7 @@ export {
     SearchBar,
     Service,
     Card,
-    FormGroup
+    FormGroup,
+    SectionTools,
+    Upgrade
 }

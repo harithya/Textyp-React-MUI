@@ -14,8 +14,8 @@ const Button: FC<ButtonProps> = ({ children, ...props }) => {
 
 const StyledButton = styled(Btn)({
     borderRadius: 10,
-    paddingTop: 8,
-    paddingBottom: 8,
+    paddingTop: 12,
+    paddingBottom: 12,
     textTransform: 'none'
 })
 

@@ -37,7 +37,7 @@ const theme = createTheme({
                         fontSize: 14
                     },
 
-                    // backgroundColor: "#F6F9FD",
+                    backgroundColor: "#F6F9FD",
                 }
             }
         },

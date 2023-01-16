@@ -50,6 +50,7 @@ const EditorView = () => {
                     }}>
                         <MUIRichTextEditor
                             label="👋 Hello Thomas! You can edit the generated or copied text here..."
+                            
 
                         />
                     </Card>
