@@ -12,12 +12,12 @@ const Section: FC<PropsWithChildren<Props>> = ({ children, title, subtitle }) =>
             <Stack mb={2}>
                 <Typography
                     component={"h4"}
-                    fontSize={30}
+                    fontSize={28}
                     mb={1}
                     fontWeight={600}>
                     {title}
                 </Typography>
-                {subtitle && <Typography fontSize={18} mb={3} color={colors.grey[500]} >{subtitle}</Typography>}
+                {subtitle && <Typography fontSize={16} mb={3} color={colors.grey[500]} >{subtitle}</Typography>}
             </Stack>
             {children}
         </Box>

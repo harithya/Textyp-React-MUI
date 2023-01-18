@@ -10,6 +10,7 @@ import Card from "./Card";
 import FormGroup from "./FormGroup";
 import SectionTools from "./Section/SectionTools";
 import Upgrade from "./Upgrade";
+import Recent from "./Content/Recent";
 
 export {
     Layout,
@@ -23,5 +24,6 @@ export {
     Card,
     FormGroup,
     SectionTools,
-    Upgrade
+    Upgrade,
+    Recent
 }

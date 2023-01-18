@@ -17,7 +17,6 @@ const EditorView = () => {
                         <FormGroup title="Chose Use Case">
                             <TextField select value=" " >
                                 <MenuItem value=" ">Blog Idea</MenuItem>
-                                <MenuItem value="#">Pilih</MenuItem>
                             </TextField>
                         </FormGroup>
                         <FormGroup title="Product/Brand Name">
@@ -50,8 +49,6 @@ const EditorView = () => {
                     }}>
                         <MUIRichTextEditor
                             label="👋 Hello Thomas! You can edit the generated or copied text here..."
-                            
-
                         />
                     </Card>
                 </Grid>

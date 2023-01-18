@@ -22,7 +22,7 @@ const Service: FC<Props> = ({ title, subtitle, image }) => {
     )
 }
 
-const StyledCard = styled(Paper)({
+export const StyledCard = styled(Paper)({
     border: `1px solid ${colors.grey[200]}`,
     padding: '20px 20px 20px 20px',
     display: "flex",

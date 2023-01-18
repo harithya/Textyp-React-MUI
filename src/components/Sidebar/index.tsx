@@ -50,7 +50,7 @@ const Sidebar: FC<DrawerProps> = (props) => {
                     <SidebarItem icon="AccountTreeRounded" to="/sosial-media-tools">Social Media Tools</SidebarItem>
                     <SidebarItem icon="SsidChartRounded" to="#">SEO Tools</SidebarItem>
                     <SidebarItem icon="BookmarksRounded" to="#">Saved Copies</SidebarItem>
-                    <SidebarItem icon="WatchLaterRounded" to="#">Recent Activity</SidebarItem>
+                    <SidebarItem icon="WatchLaterRounded" to="/recent-activity">Recent Activity</SidebarItem>
                     <ListSubheader component="div" sx={{ marginTop: 2 }} id="nested-list-subheader-2">
                         Account
                     </ListSubheader>

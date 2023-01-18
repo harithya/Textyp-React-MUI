@@ -2,10 +2,12 @@ import HomeView from "./home/HomeView";
 import EditorView from "./editor/EditorView";
 import EmailToolsView from "./email-tools/EmailToolsView";
 import SosialMediaToolsView from "./sosial-media-tools/SosialMediaToolsView";
+import RecentActivityView from "./recent-activity/RecentActivityView";
 
 export {
     HomeView,
     EditorView,
     EmailToolsView,
-    SosialMediaToolsView
+    SosialMediaToolsView,
+    RecentActivityView
 }

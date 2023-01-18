@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "../components";
-import { EditorView, EmailToolsView, HomeView, SosialMediaToolsView } from "../pages";
+import { EditorView, EmailToolsView, HomeView, RecentActivityView, SosialMediaToolsView } from "../pages";
 
 const router = createBrowserRouter([
     {
@@ -22,6 +22,10 @@ const router = createBrowserRouter([
             {
                 path: '/sosial-media-tools',
                 element: <SosialMediaToolsView />
+            },
+            {
+                path: '/recent-activity',
+                element: <RecentActivityView />
             }
         ]
     }
