@@ -6,7 +6,7 @@
 
 ## Live demo
 
-Check the live demo here 👉️ [https://harithya.github.io/Book-Review-Material-UI/](https://harithya.github.io/Book-Review-Material-UI/)
+Check the live demo here 👉️ [https://harithya.github.io/Textyp-React-MUI](https://harithya.github.io/Textyp-React-MUI)
 
 ## Design files
 
