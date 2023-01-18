@@ -6,7 +6,7 @@
 
 ## Live demo
 
-Check the live demo here 👉️ [https://harithya.github.io/Textyp-React-MUI](https://harithya.github.io/Textyp-React-MUI)
+Check the live demo here 👉️ [https://textyp.vercel.app/](https://textyp.vercel.app/)
 
 ## Design files
 
