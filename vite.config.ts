@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base:"https://harithya.github.io/Textyp-React-MUI"
+  // base:"https://harithya.github.io/Textyp-React-MUI"
 })

@@ -1,4 +1,4 @@
-# Book Review React Material UI
+# TextYP React Material UI
 
 ![Simple template preview](https://raw.githubusercontent.com/harithya/Textyp-React-MUI/main/public/cover.jpg)
 
